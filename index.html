@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">   	<!-- add meta element here-->
+	<title>PortAsia Cargo Management</title>
+	<!-- link to google font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link href="styles/main.css" rel="stylesheet">
+  <link href="styles/animation.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles/printHomePage.css" media="print">
+
+	<!-- Code for SlickNav plugin   -->
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<!-- make header clickable to activate landing page -->
+		<a href="landing-page.html">
+			<img src="images/image001.png" alt="PortAsia Logo">
+				<h2>PortAsia Cargo Management</h2>
+				<p>Integrating Intermodal</p>
+		</a>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a class="current" href="index.html">Home</a></li>
+			<li><a href="containers.html">Shipping Containters</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="">About Us</a>
+				<!-- <ul>
+					<li><a href="#">Our History</a></li>
+					<li><a href="#">Board of Directors</a></li>
+					<li><a href="#">Past Speakers</a></li>
+					<li><a href="#">Contact Information</a></li>
+				</ul> -->
+			</li>
+		</ul>
+	</nav>
+
+<main>
+<section>
+  <div>
+  <ul>
+		<li>
+				<!-- <h2>View from Quad</h2> -->
+				<img src="images/cgi-container_sales.jpg" alt="">
+		</li>
+    <li>
+        <!-- <h2>Front of Building</h2> -->
+        <img src="images/CGI-Container-Sales-Closeup-sidebar.jpg" alt="">
+    </li>
+    <li>
+        <!-- <h2>Rear of Building</h2> -->
+        <img src="images/CGI-Container-Sales-sidebarJPG.jpg" alt="">
+    </li>
+  </ul>
+  </div>
+	<h1>SHIPPING AND STORAGE CONTAINERS FOR SALE</h1>
+		<p>PortAsia Cargo Management (PCM) is North America’s leading retailer of shipping and storage container sales. Through a national network, PCM sells standard and modified equipment to consumers, corporations, and government and military institutions. We provide customers with cost-effective, space and storage solutions backed by over 30 years of quality craftsmanship.</p> <br>
+
+</section>
+
+<aside>
+	<!-- <h3>About Us</h3> -->
+	<ul>
+		<li><a href="containers.html">Our Products and Services</a></li>
+		<li><a href="recentnews.html">Recent News</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+	</ul>
+
+	<fieldset>
+		<legend>GET IN TOUCH</legend>
+		<label id="contact" for="">Contact:</label>
+		<label for="">info@pcm.com </label>
+		<label for=""><a href="">800.555.4455</a></label>
+
+		<label id="hours" for="">Opening Hours:</label>
+		<label for="">Mon-Fri: 8:00-4:30</label>
+		<label for="">Sat: closed </label>
+		<label for="">Sun: closed </label>
+	</fieldset>
+	<button class="printHomePageButton" onclick="printMe()">Print Home Page</button>
+	<script>
+	function printMe() {
+	    window.print();
+	}
+	</script>
+</aside>
+</main>
+
+	<footer>
+		<p>&copy; 2017, All Rights Reserved, PortAsia Cargo Management, Inc.</p>
+	</footer>
+
+</body>
+</html>

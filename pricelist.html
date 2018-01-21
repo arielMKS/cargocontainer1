@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">   	<!-- add meta element here-->
+
+	<title>PortAsia Cargo Management</title>
+	<!-- link to google font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link href="styles/pricelist.css" rel="stylesheet">
+	<!-- Code for SlickNav plugin   -->
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<!-- make header clickable to activate landing page -->
+		<a href="landing-page.html">
+			<img src="images/image001.png" alt="PortAsia Logo">
+				<h2>PortAsia Cargo Management</h2>
+				<p>Integrating Intermodal</p>
+		</a>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="containers.html">Shipping Containters</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="aboutus.html">About Us</a>
+			</li>
+		</ul>
+	</nav>
+
+<main>
+<section>
+	<h1>PRICE LIST</h1>
+	<figure>
+
+<figcaption>Container Price List</figcaption>
+<table>
+	<thead>
+		<tr>
+			<th>Type</th>
+			<th>Price</th>
+			<th>Delivery (local)</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>20Ft standard</td>
+			<td>$1600</td>
+			<td>$400</td>
+		</tr>
+		<tr>
+			<td>40Ft standard</td>
+			<td>$1900</td>
+			<td>$500</td>
+		</tr>
+		<tr>
+			<td>40Ft High Cube</td>
+			<td>$2100</td>
+			<td>$500</td>
+		</tr>
+		<tr>
+			<td>45Ft High Cube</td>
+			<td>$2800</td>
+			<td>$600</td>
+		</tr>
+	</tbody>
+
+</table>
+</figure>
+
+<p class="returnPrevPage" >
+	<button onclick="goBack()">&#8249;Previous Page</button>
+</p>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+</section>
+</main>
+
+	<footer>
+		<p>&copy; 2017, All Rights Reserved, PortAsia Cargo Management, Inc.</p>
+	</footer>
+
+</body>
+</html>

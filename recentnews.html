@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">   	<!-- add meta element here-->
+
+	<title>PortAsia Cargo Management</title>
+	<!-- link to google font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link href="styles/recentnews.css" rel="stylesheet">
+	<!-- Code for SlickNav plugin   -->
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="slide_show.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<!-- make header clickable to activate landing page -->
+		<a href="landing-page.html">
+			<img src="images/image001.png" alt="PortAsia Logo">
+				<h2>PortAsia Cargo Management</h2>
+				<p>Integrating Intermodal</p>
+		</a>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="containers.html">Shipping Containters</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="aboutus.html">About Us</a>
+				<!-- <ul>
+					<li><a href="#">Our History</a></li>
+					<li><a href="#">Board of Directors</a></li>
+					<li><a href="#">Past Speakers</a></li>
+					<li><a href="#">Contact Information</a></li>
+				</ul> -->
+			</li>
+		</ul>
+	</nav>
+
+<main>
+<section>
+	<!-- <h1>Fishing Slide Show</h1> -->
+<h2>RECENT NEWS</h2>
+<br>
+<a href="https://www.nytimes.com/2017/09/22/realestate/home-in-shipping-container.html"  target="_blank"><img class="avia_image " src="http://cgicontainersales.com/wp-content/uploads/2017/09/New-York-Times-ITSConglobal-Container-Homes-1080x423.jpg" alt="" title="New-York-Times-ITSConglobal-Container-Homes" itemprop="contentURL"></a>
+<br>
+
+		<p class="returnPrevPage" >
+			<button onclick="goBack()">&#8249;Previous Page</button>
+		</p>
+		<script>
+			function goBack() {
+			    window.history.back();
+			}
+		</script>
+</section>
+
+<aside>
+		<h3>PCM CUSTOMER TESTIMONIALS</h3>
+		<br>
+		<p><strong>Testimonials for the Atlanta, Georgia Sales Location</strong></p>
+		<br>
+		<blockquote>It has been my absolute pleasure to do business with Jennifer Moreno.  From the outset Jennifer has been informative, responsive and best of all, sports an extremely pleasant personality.  Our process began back in November in obtaining pricing/sizing of containers available.  We experienced weather delays, (and a self-imposed delay) but happily Jennifer made the needed adjustments and kept the process smooth.  We would truly appreciate your commending Jennifer for excellent customer care.  Thanks so much.</blockquote><br>
+		<p><strong>Lorie Hannenberer</strong><br>
+		Legal Administrative Assistant - The Thornburg Group LLP</p>
+		<br>
+
+</aside>
+</main>
+
+
+	<footer>
+		<p>&copy; 2017, All Rights Reserved, PortAsia Cargo Management, Inc.</p>
+	</footer>
+
+</body>
+</html>

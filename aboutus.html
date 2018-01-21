@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">   	<!-- add meta element here-->
+
+	<title>PortAsia Cargo Management</title>
+	<!-- link to google font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link href="styles/aboutus.css" rel="stylesheet">
+	<!-- Code for SlickNav plugin   -->
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="slide_show.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<!-- make header clickable to activate landing page -->
+		<a href="landing-page.html">
+			<img src="images/image001.png" alt="PortAsia Logo">
+				<h2>PortAsia Cargo Management</h2>
+				<p>Integrating Intermodal</p>
+		</a>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="containers.html">Shipping Containters</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a class="current" href="aboutus.html">About Us</a></li>
+		</ul>
+	</nav>
+
+<main>
+<section>
+	<!-- <h1>Fishing Slide Show</h1> -->
+	<h2 id="caption">Dedicated Employees</h2>
+	<img id="slide" src="images/CGI-Container-Sales-Portland-Aerial-portfolio.jpg" alt="">
+	<div id="slides">
+			<img src="images/CGI-Container-Sales-Portland-Aerial-portfolio.jpg" alt="Our Depot Yard">
+			<img src="images/CGI-Container-Stacked-portfolio.jpg" alt="Our Inventory">
+			<img src="images/CGI-Container-Stack-portfolio.jpg" alt="Dedicated Employees">
+	</div>
+</section>
+
+<aside>
+	<h3>ABOUT US</h3>
+	<p>PCM is North America’s largest full-service supplier to the intermodal industry, providing depot services, equipment sales and transportation services. PCM provides equipment repair, maintenance, storage and redistribution services to global shipping lines and leasing companies. PCM is also a leading retailer of standard and modified equipment in new and used condition to consumers, corporations, and government and military institutions.</p>
+	<br>
+	<h3>PARTNER WITH US</h3>
+	<p>PCM is fortunate to work with the best in the business.  We have partnerships with designers, architects, brands, and businesses to continue to push the limits as to what you can do with a shipping container.</p>
+
+</aside>
+</main>
+	<footer>
+		<p>&copy; 2017, All Rights Reserved, PortAsia Cargo Management, Inc.</p>
+	</footer>
+
+</body>
+</html>

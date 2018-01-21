@@ -1,0 +1,6 @@
+
+
+.image3:hover {
+	transform: scaleX(1.1);
+	-webkit-transform: scaleX(1.1);
+}

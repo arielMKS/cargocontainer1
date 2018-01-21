@@ -1,0 +1,210 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+body {
+	margin: 3px;
+	background-color: #e6faff;
+	border: 3px solid #007a99;
+	margin: 0 auto;
+	max-width: 960px;
+	width: 99%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 100%;
+}
+/* the styles for the header */
+header {
+	width: 100%;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	border-bottom: 2px solid #ff8533;
+}
+header a {
+	text-decoration: none;
+	color: black;
+}
+header img {
+	width: 100%;
+	max-width: 110px;         /* native size */
+	min-width: 20px;
+	float: left;
+	padding: 0 2%;
+}
+header h2 {
+	letter-spacing: .1em;
+	font-size: 1.75em;                    /* 28 / 16 */
+}
+a:hover, a:focus { font-style: italic; }
+
+#nav_menu {
+	border-bottom: 2px solid #ff8533;
+}
+/* The styles for the operation of the 2-tier navigation menu */
+#nav_menu ul {
+	text-align: center;
+	list-style-type: none;
+	/*position: relative;    /* So the first submenu can be positioned within the main menu */*/
+}
+
+#nav_menu ul ul {
+	display: none;         /* Don't display submenu until hover of the li element */
+	position: absolute;
+	top: 100%;             /* Position the submenu at the bottom of the main menu */
+}
+#nav_menu ul ul li {
+	float: none;           /* Display the submenus vertically */
+	width: 125%;          /* <-----a temporary fix to expand submenu */
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;        /* Display the submenu on hover of the li element */*/
+}
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* The styles for the formatting of the 2-tier navigation menu */
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+}
+#nav_menu ul li {
+	width: 20%;
+	float: left;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	/*width: 160px;    moved to #nav_menu ul li*/
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: #00ccff;
+	color: black;
+	font-weight: bold; }
+
+#nav_menu ul li a.current { color: #ff8533; }
+
+/* the styles for the section */
+section  {
+	padding: 1.25%;
+	float: left;
+	width: 57.5%;
+
+}
+section input {
+	width: 100%;
+}
+/*COOL STUFF HERE input with type="submit"*/
+section input[type="submit"] {
+	width: 40%;
+	height: 2em;
+	/*max-height: 20px;*/
+}
+section div {
+	overflow:hidden;
+}
+section h1 {
+	margin: 0 0 .25em;
+	padding: 0;
+}
+section h2 {
+  color: blue;
+	font-size: 100%;
+}
+section img {
+	max-width:100%;
+}
+section #test1 {
+	font-size: 55px;
+	color: red;
+}
+
+/* the styles for the aside */
+aside{
+	padding: 1.25%;
+	width: 37.5%;
+	float: left;
+}
+aside h1 {
+	margin: 0 0 .25em;
+	padding: 0;
+}
+aside ul {
+	list-style-type: none;
+	text-decoration: none;
+}
+aside li a {
+	text-decoration: none;
+	color: grey;
+}
+
+aside a:hover, aside a:focus {
+	/*font-style: italic; */
+	color: blue;
+}
+aside p:strong {
+	color: #d1ab22;
+}
+.returnPrevPage {
+	margin: .25em .25em;
+	padding: .25em .25em;
+	width: 40%;
+}
+
+textarea {
+	/*height: 50px;*/
+	width: 100%;
+}
+
+/* the styles for the footer */
+footer {
+	clear: both;
+}
+footer p {
+	padding: 1em;
+	color: white;
+	background-color: #00ccff;
+	text-align: center;
+}
+
+/*hide the mobile menu*/
+#mobile_menu { display: none; }
+
+/* =================== phone in portrait orientation */
+@media only screen and (max-width: 479px) {
+	body {
+		font-size: 90%;
+	}
+}
+
+/* =================== phone in landscape orientation */
+@media only screen and (max-width: 767px) {
+	#mobile_menu {
+		display: block;
+		background: #894402; }
+	#nav_menu { display: none; }
+	header { text-align: center; }
+	header h2 {
+		font-size: 1.5em;
+		margin: .4em 0 .25em 0;
+	}
+	header img {  /* step #15 image not centering*/
+		float: none;
+	}
+	section {
+		width: 97.5%;
+	 }
+	aside {
+		font-size: 80%;
+		padding-bottom: 1em;
+		width: 97.5%;
+		padding-right: 1.25%;
+		clear: both;
+	}
+
+}

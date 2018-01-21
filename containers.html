@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">   	<!-- add meta element here-->
+
+	<title>PortAsia Cargo Management</title>
+	<!-- link to google font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link href="styles/containers.css" rel="stylesheet">
+  <!-- <link href="styles/animation.css" rel="stylesheet"> -->
+	<!-- Code for SlickNav plugin   -->
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="image_swap.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<!-- make header clickable to activate landing page -->
+		<a href="landing-page.html">
+			<img src="images/image001.png" alt="PortAsia Logo">
+				<h2>PortAsia Cargo Management</h2>
+				<p>Integrating Intermodal</p>
+		</a>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a class="current" href="containers.html">Shipping Containters</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+		</ul>
+	</nav>
+
+<main>
+	<section>
+		<h1>CONTAINER PRODUCTS AND SERVICES</h1>
+	    <ul id="image_list">
+				<li><a href="images/CGI-Container-Modifications.jpg" class="#div2" title="Container 1-1: Modification work">
+					<img src="thumbnails/CGI-Container-Modifications_t.jpg" alt=""></a></li>
+
+					<!-- There's a problem loading file below: PCM-container_sales.jpg  -->
+				<!-- <li><a href="images/PCM-container_sales.jpg" class="#div1" title="Container 1-1: For sale">
+					<img src="thumbnails/cgi-container_sales_t.jpg" alt=""></a></li> -->
+
+
+				<li><a href="images/CGI-Container-Refrigeration.jpg" class="#div3" title="Container 1-2: Reefer">
+					<img src="thumbnails/CGI-Container-Refrigeration_t.jpg" alt=""></a></li>
+
+
+				<li><a href="images/CGI-Container-Modifications.jpg" class="#div4" title="Container 1-3: Modification work">
+					<img src="thumbnails/CGI-Container-Modifications_t.jpg" alt=""></a></li>
+				<!-- <li><a href="images/CGI-Container-Drawing-845x321.jpg" class="#div4" title="Container 1-3: Inventory">
+					<img src="thumbnails/CGI-Container-Drawing-845x321_t.jpg" alt=""></a></li> -->
+
+				<li><a href="images/cgi-containers-for-lease-sidebar.jpg" class="#div5" title="Container 1-4: Our Depot">
+					<img src="thumbnails/cgi-containers-for-lease-sidebar_t.jpg" alt=""></a></li>
+				<li><a href="images/CGI-Container-Sales-Rep-845x321.jpg" class="#div6" title="Container 1-5: Our staff">
+					<img src="thumbnails/CGI-Container-Sales-Rep-845x321_t.jpg" alt=""></a></li>
+	    </ul>
+	    <h2 id="caption">Container 1-1: For sale</h2>
+	    <p><img src="images/CGI-Container-Modifications.jpg" alt="" id="image"></p>
+	</section>
+
+<aside>
+	<div id="div1">
+		<h2>SHIPPING CONTAINERS FOR SALE</h2>
+		<p>Through a national network, PCM sells standard and modified equipment to consumers, corporations, and government and military institutions. We provide customers with cost-effective, space and storage solutions backed by 40 years of quality craftsmanship.</p>
+	</div>
+
+	<div id="div2">
+		<h2>MODIFIED SHIPPING CONTAINERS</h2>
+		<p>Shipping and storage containers are ideal for modifying into extra storage or a mobile office. PCM provides both standard and custom modifications for any application.</p>
+	</div>
+
+	<div id="div3">
+		<h2>REFRIGERATED SHIPPING CONTAINERS</h2>
+		<p>PCM offers a full line of new and reconditioned refrigerated containers for sale and rent.   These units have proven to be very durable and reliable for domestic use and are extremely rugged – perfect for a harsh environment or static storage on land.</p>
+	</div>
+
+	<div id="div4">
+		<h2>WHAT ARE SHIPPING CONTAINERS?</h2>
+		<p>Learn more about shipping containers, where they come from, what they can be used for, and why PCM is your best and most reliable source in the industry!</p>
+	</div>
+
+	<div id="div5">
+		<h2>SHIPPING CONTAINERS FOR LEASE</h2>
+		<p>If you want to lease or rent a container rather than purchase one, PCM has a container rental pool for both long and short term rental at competitive rates. Renting a container offers you instant and inexpensive space and storage solutions.</p>
+	</div>
+
+	<div id="div6">
+		<h2>CONTACT A LOCAL SALES REP</h2>
+		<p>Are you ready to buy or lease a container?
+			<a href="contact.html">Click here</a> to find the PCM Container Sales representative nearest you.  We will be happy to help with all your container needs!</p>
+	</div>
+	<br>
+	<h4><a href="pricelist.html">VIEW PRICE LIST</a></h4>
+	<br>
+
+	<p class="returnPrevPage" >
+		<button onclick="goBack()">&#8249;Previous Page</button>
+	</p>
+	<!-- <button class="returnPrevPage" onclick="goBack()">&#8249;Previous Page</button> -->
+	<script>
+		function goBack() {
+				window.history.back();
+		}
+	</script>
+
+</aside>
+
+</main>
+<footer>
+	<p>&copy; 2017, All Rights Reserved, PortAsia Cargo Management, Inc.</p>
+</footer>
+
+</body>
+</html>
